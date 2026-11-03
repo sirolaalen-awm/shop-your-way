@@ -1,0 +1,87 @@
+{
+  "kind": "Real local model; catalog stubbed. Not a live Channel3 or PayPal test.",
+  "provider": "Ollama",
+  "model": "qwen3:4b",
+  "rows": [
+    {
+      "scenario": "shoes",
+      "input": "I need comfortable walking shoes for daily commuting, under $100. Keep it simple.",
+      "elapsedMs": 16104.5875,
+      "searches": 1,
+      "originalIntent": "I need comfortable walking shoes for daily commuting, under $100. Keep it simple.",
+      "intent": {
+        "goal": "comfortable walking shoes for daily commuting",
+        "requirements": [
+          "under $100"
+        ],
+        "budget": 100,
+        "currency": "USD",
+        "preferences": [],
+        "assistance": {
+          "need": 0.7,
+          "price": 0.9,
+          "verify": 1,
+          "quick": 0.9,
+          "explore": 0.2
+        },
+        "journey": "online"
+      },
+      "reply": "Hmm, no products found in the controlled catalog. Let's try a different approach—maybe focus on specific brands or styles that are known for comfort and affordability. What brands do you usually prefer for walking shoes?",
+      "notice": "Controlled catalog boundary: no Channel3 credentials; no real search performed."
+    },
+    {
+      "scenario": "shoes",
+      "input": "Actually I need to try them in person first, then buy online. Keep the budget.",
+      "elapsedMs": 9812.786699999999,
+      "searches": 0,
+      "originalIntent": "I need comfortable walking shoes for daily commuting, under $100. Keep it simple.",
+      "intent": {
+        "goal": "comfortable walking shoes for daily commuting",
+        "requirements": [
+          "under $100"
+        ],
+        "budget": 100,
+        "currency": "USD",
+        "preferences": [],
+        "assistance": {
+          "need": 0.7,
+          "price": 0.9,
+          "verify": 1,
+          "quick": 0.9,
+          "explore": 0.2
+        },
+        "journey": "online"
+      },
+      "reply": "Got it! We'll plan a local try-on first to check comfort and fit. I'll help find stores near you that sell walking shoes under $100. Just share your current location or nearest store.",
+      "notice": ""
+    },
+    {
+      "scenario": "tv",
+      "input": "I am exploring a TV for a small room under $600. Help me compare picture quality, I am not in a hurry.",
+      "elapsedMs": 15441.375200000002,
+      "searches": 1,
+      "originalIntent": "I am exploring a TV for a small room under $600. Help me compare picture quality, I am not in a hurry.",
+      "intent": {
+        "goal": "exploring a TV for a small room",
+        "requirements": [
+          "picture quality"
+        ],
+        "budget": 600,
+        "currency": "USD",
+        "preferences": [
+          "small room"
+        ],
+        "assistance": {
+          "need": 0.7,
+          "price": 0.9,
+          "verify": 0.9,
+          "quick": 0.2,
+          "explore": 0.9
+        },
+        "journey": "online"
+      },
+      "reply": "I found no TVs in the controlled catalog that match your criteria. Let's check if we can adjust your needs or try a different approach.",
+      "notice": "Controlled catalog boundary: no Channel3 credentials; no real search performed."
+    }
+  ]
+}

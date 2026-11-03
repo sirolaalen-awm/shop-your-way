@@ -1,0 +1,11 @@
+node_modules/
+.next/
+.data/
+.env*
+!.env.example
+test-results/
+playwright-report/
+*.tsbuildinfo
+.devpost-hackathon-state.json
+.registration-draft.json
+evidence/*.png

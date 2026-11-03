@@ -1,0 +1,46 @@
+{
+  "kind": "Actual local app, actual local model. No external catalog or PayPal operation.",
+  "session": {
+    "originalIntent": "I need comfortable walking shoes under $100. Keep it simple.",
+    "intent": {
+      "goal": "comfortable walking shoes",
+      "requirements": [
+        "under $100"
+      ],
+      "budget": 100,
+      "currency": "USD",
+      "preferences": [],
+      "assistance": {
+        "need": 0.7,
+        "price": 0.9,
+        "verify": 0.9,
+        "quick": 0.2,
+        "explore": 0.1
+      },
+      "journey": "hybrid"
+    },
+    "messages": [
+      {
+        "role": "user",
+        "content": "I need comfortable walking shoes under $100. Keep it simple."
+      },
+      {
+        "role": "assistant",
+        "content": "Hmm, the catalog isn't connected right now. Let me check if we can use sample products to find options. Would you like me to show some sample walking shoes under $100?"
+      },
+      {
+        "role": "user",
+        "content": "Actually I need to try them in person first, then buy online. Keep the budget."
+      },
+      {
+        "role": "assistant",
+        "content": "I see the catalog isn't live right now. Let me show you some sample walking shoes under $100 to try in person. Would you like to see options?"
+      }
+    ],
+    "products": [],
+    "variant": "",
+    "stopped": false,
+    "revision": 2,
+    "confirmed": false
+  }
+}

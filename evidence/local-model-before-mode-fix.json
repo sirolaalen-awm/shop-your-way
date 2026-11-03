@@ -1,0 +1,92 @@
+{
+  "kind": "Real local model; catalog stubbed. Not a live Channel3 or PayPal test.",
+  "provider": "Ollama",
+  "model": "qwen3:4b",
+  "rows": [
+    {
+      "scenario": "shoes",
+      "input": "I need comfortable walking shoes for daily commuting, under $100. Keep it simple.",
+      "elapsedMs": 29550.5282,
+      "searches": 1,
+      "originalIntent": "I need comfortable walking shoes for daily commuting, under $100. Keep it simple.",
+      "intent": {
+        "goal": "comfortable walking shoes for daily commuting",
+        "requirements": [
+          "under $100"
+        ],
+        "budget": 100,
+        "currency": "USD",
+        "preferences": [
+          "simple"
+        ],
+        "assistance": {
+          "need": 0.7,
+          "price": 0.3,
+          "verify": 0.3,
+          "quick": 0.3,
+          "explore": 0.3
+        },
+        "journey": "online"
+      },
+      "reply": "I have saved the shopping details I could verify. Please review your intent and results before continuing.",
+      "notice": "Controlled catalog boundary: no Channel3 credentials; no real search performed."
+    },
+    {
+      "scenario": "shoes",
+      "input": "Actually I need to try them in person first, then buy online. Keep the budget.",
+      "elapsedMs": 11906.336000000003,
+      "searches": 0,
+      "originalIntent": "I need comfortable walking shoes for daily commuting, under $100. Keep it simple.",
+      "intent": {
+        "goal": "comfortable walking shoes for daily commuting",
+        "requirements": [
+          "under $10:00"
+        ],
+        "budget": 100,
+        "currency": "USD",
+        "preferences": [
+          "simple"
+        ],
+        "assistance": {
+          "need": 0.7,
+          "price": 0.3,
+          "verify": 0.3,
+          "quick": 0.3,
+          "explore": 0.3
+        },
+        "journey": "hybrid"
+      },
+      "reply": "I have saved the shopping details I could verify. Please review your intent and results before continuing.",
+      "notice": ""
+    },
+    {
+      "scenario": "tv",
+      "input": "I am exploring a TV for a small room under $600. Help me compare picture quality, I am not in a hurry.",
+      "elapsedMs": 14236.735700000005,
+      "searches": 0,
+      "originalIntent": "I am exploring a TV for a small room under $600. Help me compare picture quality, I am not in a hurry.",
+      "intent": {
+        "goal": "Compare picture quality for a small room TV under $600",
+        "requirements": [
+          "Small room",
+          "Under $600"
+        ],
+        "budget": 600,
+        "currency": "USD",
+        "preferences": [
+          "Picture quality"
+        ],
+        "assistance": {
+          "need": 0.7,
+          "price": 0.3,
+          "verify": 0.3,
+          "quick": 0.3,
+          "explore": 0.3
+        },
+        "journey": "online"
+      },
+      "reply": "I'll help you compare picture quality for a small room TV under $600. Let's start with a few key specs to focus on: screen size, resolution (like 4K), and refresh rate. What's your top priority right now?",
+      "notice": ""
+    }
+  ]
+}
