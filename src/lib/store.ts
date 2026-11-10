@@ -11,7 +11,7 @@ export async function transaction<T>(id:string,fn:(s:Session,checkpoint:()=>Prom
   const next=prior.catch(()=>{}).then(async()=>{
     await mkdir(root,{recursive:true}); const file=path.join(root,id+'.json');let s:Session;
     try{s=JSON.parse(await readFile(file,'utf8'));}catch(e){if((e as NodeJS.ErrnoException).code!=='ENOENT')throw e;s=newSession(id);}
-    if(Date.now()-s.updatedAt>24*60*60*1000) s=newSession(id);
+    if(Date.now()-s.updatedAt>24*60*60*1000 && !s.checkout?.captureAttempted) s=newSession(id);
     const checkpoint=async()=>{s.updatedAt=Date.now();const tmp=file+'.'+randomUUID()+'.tmp';await writeFile(tmp,JSON.stringify(s),{mode:0o600});await rename(tmp,file);};
     const result=await fn(s,checkpoint);await checkpoint();
     return result;

@@ -9,3 +9,11 @@ playwright-report/
 .devpost-hackathon-state.json
 .registration-draft.json
 evidence/*.png
+evidence/demo-preview/
+
+# All local build variants and private recording artifacts
+.next*/
+evidence/**/*.jpg
+evidence/**/*.png
+evidence/**/*.mp4
+evidence/**/*.webm

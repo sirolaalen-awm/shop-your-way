@@ -1,0 +1,23 @@
+{
+  "checkedAt": "2026-11-10T09:30:13.892Z",
+  "environment": "SANDBOX",
+  "httpStatus": 200,
+  "verified": true,
+  "orderId": "5MV40446CV261361T",
+  "status": "COMPLETED",
+  "amount": "1.00",
+  "currency": "USD",
+  "reference": "syw-demo",
+  "buyerMerchantDifferent": true,
+  "captures": [
+    {
+      "id": "24N78740D1268482H",
+      "status": "COMPLETED",
+      "amount": "1.00",
+      "currency": "USD"
+    }
+  ],
+  "verificationOperations": "OAuth + GET only",
+  "createdOrders": 0,
+  "captureCalls": 0
+}
